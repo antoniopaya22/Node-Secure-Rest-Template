@@ -1,0 +1,23 @@
+[{
+    "name": "default",
+    "skip": false,
+    "type": "sqlite",
+    "database": "database.db",
+    "entities": ["dist/models/*.js"],
+    "logging": false
+}, {
+    "name": "dev",
+    "skip": false,
+    "type": "sqlite",
+    "database": "dev.db",
+    "entities": ["src/models/*.ts"],
+    "logging": false
+}, {
+    "name": "second-connection",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "test",
+    "password": "test",
+    "database": "test"
+}]
